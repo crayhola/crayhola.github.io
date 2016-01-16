@@ -4,7 +4,11 @@ activate :views
 activate :directory_indexes
 activate :autoprefixer
 
+
+set :haml, { :ugly => true, :format => :html5 }
 set :relative_links, true
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :redcarpet
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"

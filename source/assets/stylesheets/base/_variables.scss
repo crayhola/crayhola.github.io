@@ -14,15 +14,44 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$gutter: modular-scale(1, 1em, $golden) !default;
 
 // Colors
 $blue: #477dca;
-$dark-gray: #333;
+$dark-gray: #333 !default;
 $medium-gray: #999;
 $light-gray: #ddd;
+$white: #fff;
+$crayola-yellow: #FFDA25;
+
+$base-border-radius: 3px !default;
+$base-line-height: 1.5em !default;
+$base-spacing: 1.5em !default;
+$action-color: #blue !default;
+
+$base-border-radius: 3px !default;
+$large-screen: em(860) !default;
+$base-font-color: $dark-gray !default;
+$navigation-padding: 1em;
+$navigation-logo-height: 2em;
+$navigation-background: #E7F1EC;
+$navigation-color: transparentize($base-font-color, 0.3);
+$navigation-color-hover: $base-font-color;
+$navigation-height: 60px;
+$navigation-item-padding: 1em;
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+$navigation-item-nudge: 2.2em;
+$horizontal-bar-mode: $large-screen;
+
+$light-gray: #DDD !default;
+$medium-screen: em(640) !default;
+$base-font-color: $white !default;
+$sans-serif: 'Questrial', sans-serif;
+$serif: 'Sanchez', serif;
 
 // Font Colors
-$base-background-color: #fff;
+$base-background-color: $white;
 $base-font-color: $dark-gray;
 $action-color: $blue;
 

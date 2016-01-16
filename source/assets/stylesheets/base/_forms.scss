@@ -57,7 +57,7 @@ textarea {
 }
 
 input[type="search"] {
-  appearance: none;
+  @include appearance(none);
 }
 
 input[type="checkbox"],
