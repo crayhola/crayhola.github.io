@@ -10,10 +10,8 @@ body {
     }
 }
 
-#signUp {
-    iframe {
-        height: 500px;
-    }
+#join {
+    @include clearfix;
 }
 
 .wrapper {
