@@ -53,9 +53,9 @@ title: Welcome
 
     %h2 JOIN
 
-    -# .typeform-widget{"data-text" => "Join the Journalists of Color (JOC) Slack Channel", "data-url" => "https://erik74.typeform.com/to/Utaa2L", :style => 'width:100%;height:500px;'}
-    -# :javascript
-    -#     (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+    -# Pym will iFrame the sign up form here
+    #signUp
+    -# %iframe{"id" => "signUp", "data-text" => "Join the Journalists of Color (JOC) Slack Channel", "src" => "https://erik74.typeform.com/to/Utaa2L"}
 
 
 %section#slack
@@ -75,11 +75,11 @@ title: Welcome
 
         4. By default, you’ll be opted into the #general and #intros channels. Go ahead and tell us a little bit about yourself in the #intros channel!
 
-        5. _Something about how the newb will get a doc with second tier instructions like the private slack contacts and stuff.. this is stuff that doesn’t need to be public facing. also, can we get someone to build a bot that will hit them up when they join with this kind of stuff?_
+%section#resources
 
-%section#etc
-
-    %h2 ETC.
+    %h2 Resources
 
     :markdown
-        [Our Twitter list](https://twitter.com/juliachanb/lists/jocs 'Journalists of Color Twitter List')
+        + [Our Twitter list](https://twitter.com/juliachanb/lists/jocs 'Journalists of Color Twitter List')
+        + [Writers of color](http://www.writersofcolor.org/ 'Writers of Color') - [Twitter](https://twitter.com/writersofcolor/lists/writers 'Writers of Color Twitter')
+        + [Journalism Diversity Project](http://diversify.journalismwith.me/ 'Journalism Diversity Project')
