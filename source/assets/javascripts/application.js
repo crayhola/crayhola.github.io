@@ -26,8 +26,5 @@ $(document).ready(function () {
         });
         return false;
     });
-
-    var PymTypeformParent = new pym.Parent('signUp', 'https://erik74.typeform.com/to/Utaa2L', {});
-
-    console.log(PymTypeformParent);
+    
 });
