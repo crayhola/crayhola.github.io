@@ -1,3 +1,32 @@
+#TODO: README UPDATE
+
+## Getting Started
+
+Set up your project in your code directory
+```
+git clone https://github.com/crayhola/crayhola.git
+cd crayhola
+git remote rm origin
+git remote add origin https://github.com/crayhola/crayhola.git
+```
+
+Install dependencies:
+```
+bundle install
+```
+
+Run the server
+```
+middleman
+```
+
+Deploy to Github Pages
+```
+middleman deploy
+```
+
+Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
+
 # Proteus - Middleman
 
 ## About Proteus
@@ -35,33 +64,6 @@ Pages.
 
 We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns.
 
-## Getting Started
-
-Set up your project in your code directory
-```
-git clone https://github.com/thoughtbot/proteus-middleman.git your-project-folder
-cd your-project-folder
-git remote rm origin
-git remote add origin your-git-url
-```
-
-Install dependencies:
-```
-bundle install
-```
-
-Run the server
-```
-middleman
-```
-
-Deploy to Github Pages
-```
-middleman deploy
-```
-
-Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
-
 ## Directories
 
 Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
@@ -70,10 +72,10 @@ Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directo
 ## Contributing
 
 If you have problems, please create a
-[GitHub Issue](https://github.com/thoughtbot/proteus-middleman/issues).
+[GitHub Issue](https://github.com/crayhola/crayhola/issues).
 
 Have a fix or want to add a feature?
-[Pull Requests](https://github.com/thoughtbot/proteus-middleman/pulls) are welcome!
+[Pull Requests](https://github.com/crayhola/crayhola/pulls) are welcome!
 
 ## Credits
 
