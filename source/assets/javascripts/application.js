@@ -16,7 +16,7 @@ $(document).ready(function () {
         var $href = $(this).attr('href');
         var $anchor = $($href).offset();
 
-        var bodyPadding = $('section.type-system-geometric').css('margin-top');
+        var bodyPadding = $('section').css('margin-top');
         var sectionScrollTopFix = $anchor.top - parseInt(bodyPadding);
 
         $('body').animate({
