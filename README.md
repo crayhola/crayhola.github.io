@@ -1,5 +1,3 @@
-#TODO: README UPDATE
-
 ## Getting Started
 
 Set up your project in your code directory
@@ -15,12 +13,12 @@ bundle install
 
 Run the server
 ```
-middleman
+proteus server
 ```
 
 Deploy to Github Pages
 ```
-middleman deploy
+proteus deploy
 ```
 
 Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
