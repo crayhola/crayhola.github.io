@@ -1,5 +1,5 @@
 body {
-    background-color: $white;
+    background-color: $hilz-light-gray;
     color: $dark-gray;
     @include outer-container;
     margin: 0 $gutter;
@@ -10,8 +10,21 @@ body {
     }
 }
 
+section {
+    margin-bottom: 50px;
+}
+
+.main-wrapper {
+    padding-top: 90px;
+}
+
 #join {
     @include clearfix;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 18px;
 }
 
 .wrapper {
