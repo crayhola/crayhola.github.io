@@ -4,10 +4,8 @@
 
 Set up your project in your code directory
 ```
-git clone https://github.com/crayhola/crayhola.git
+git clone https://github.com/crayhola/crayhola.github.io.git
 cd crayhola
-git remote rm origin
-git remote add origin https://github.com/crayhola/crayhola.git
 ```
 
 Install dependencies:
@@ -72,10 +70,10 @@ Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directo
 ## Contributing
 
 If you have problems, please create a
-[GitHub Issue](https://github.com/crayhola/crayhola/issues).
+[GitHub Issue](https://github.com/crayhola/crayhola.github.io/issues).
 
 Have a fix or want to add a feature?
-[Pull Requests](https://github.com/crayhola/crayhola/pulls) are welcome!
+[Pull Requests](https://github.com/crayhola/crayhola.github.io/pulls) are welcome!
 
 ## Credits
 
