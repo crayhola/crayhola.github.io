@@ -40,9 +40,31 @@ a {
 }
 
 .navigation ul li.nav-link a {
+  padding: 0 1em;
   font-weight: 800;
   &.home {
+    color: #333;
+  }
+  &.rules {
+    color: $hilz-gold;
+    &:hover {
+      color: #fff;
+      background: $hilz-gold;
+    }
+  }
+  &.invites {
     color: $hilz-blue;
+    &:hover {
+      color: #fff;
+      background: $hilz-blue;
+    }
+  }
+  &.join {
+    color: $hilz-red;
+    &:hover {
+      color: #fff;
+      background: $hilz-red;
+    }
   }
 }
 
@@ -65,7 +87,7 @@ section {
 }
 
 #slack {
-  border-top: 10px solid 
+  border-top: 10px solid #333;
 }
 
 #resources {
