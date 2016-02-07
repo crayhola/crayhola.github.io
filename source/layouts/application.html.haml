@@ -16,15 +16,15 @@
         %nav{ role: 'navigation'}
           %ul.navigation-menu.show#js-navigation-menu
             %li.nav-link
-              %a{ href: '#home' } Home
+              %a{ href: '#home', class: 'home' } Home
             %li.nav-link
-              %a{ href: '#invite' } Invites
+              %a{ href: '#invite', class: 'invites' } Invites
             %li.nav-link
-              %a{ href: '#rules' } Rules
+              %a{ href: '#rules', class: 'rules' } Rules
             %li.nav-link
-              %a{ href: '#join' } Join
+              %a{ href: '#join', class: 'join' } Join
             %li.nav-link
-              %a{ href: '#resources' } Resources
+              %a{ href: '#resources', class: 'resources' } Resources
 
     = yield
     = javascript_include_tag 'https://code.jquery.com/jquery-2.1.1.min.js', 'application'
