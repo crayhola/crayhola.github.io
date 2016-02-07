@@ -33,6 +33,19 @@ a {
   color: $hilz-blue;
 }
 
+// Navigation
+
+.navigation {
+  background: $hilz-light-gray;
+}
+
+.navigation ul li.nav-link a {
+  font-weight: 800;
+  &.home {
+    color: $hilz-blue;
+  }
+}
+
 // Sections
 
 section {
