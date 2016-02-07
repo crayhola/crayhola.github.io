@@ -16,6 +16,9 @@ $(document).ready(function () {
         var $href = $(this).attr('href');
         var $anchor = $($href).offset();
 
+        $('#js-navigation-menu').find('a').removeClass('selected');
+        $(this).addClass('selected');
+
         var bodyPadding = $('section').css('margin-top');
         var sectionScrollTopFix = $anchor.top - parseInt(bodyPadding);
 
@@ -24,6 +27,7 @@ $(document).ready(function () {
             duration: 500,
             easing: 'easein'
         });
+
         return false;
     });
 
