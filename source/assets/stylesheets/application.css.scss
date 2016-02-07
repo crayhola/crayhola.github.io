@@ -66,6 +66,13 @@ a {
       background: $hilz-red;
     }
   }
+  &.resources {
+    color: $hilz-green;
+    &:hover {
+      color: #fff;
+      background: $hilz-green;
+    }
+  }
 }
 
 // Sections
@@ -86,12 +93,8 @@ section {
   border-top: 10px solid $hilz-red;
 }
 
-#slack {
-  border-top: 10px solid #333;
-}
-
 #resources {
-
+  border-top: 10px solid $hilz-green;
 }
 
 
