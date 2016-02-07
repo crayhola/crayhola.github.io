@@ -2,3 +2,59 @@
 @import "neat";
 @import "base/base";
 @import "vendor/global";
+
+body {
+  background: #fff;
+}
+
+.main-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+// Typography
+
+h1 { // Main hed for the page
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+h2 { // Section heds
+  font-size: 1.6em;
+  font-weight: 800;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  color: $hilz-blue;
+}
+
+// Sections
+
+section {
+  margin: 6em auto;
+}
+
+#rules {
+  border-top: 10px solid $hilz-gold;
+}
+
+#invite {
+  border-top: 10px solid $hilz-blue;
+}
+
+#join {
+  border-top: 10px solid $hilz-red;
+}
+
+#slack {
+  border-top: 10px solid 
+}
+
+#resources {
+
+}
