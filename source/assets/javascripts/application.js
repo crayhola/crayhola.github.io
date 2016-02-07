@@ -26,5 +26,13 @@ $(document).ready(function () {
         });
         return false;
     });
-    
+
+
+    $('#ss-form').submit( function(){
+       $(this).hide();
+       $('#crayhola-submit-page').show();
+       console.log("you submitted!")
+    });
+
+
 });
