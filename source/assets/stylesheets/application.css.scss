@@ -2,3 +2,142 @@
 @import "neat";
 @import "base/base";
 @import "vendor/global";
+
+body {
+  background: #fff;
+}
+
+.main-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+// Typography
+
+h1 { // Main hed for the page
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+h2 { // Section heds
+  font-size: 1.6em;
+  font-weight: 800;
+  text-align: center;
+  margin: 0.4em auto 1em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  color: $hilz-blue;
+}
+
+// Navigation
+
+.navigation {
+  background: $hilz-light-gray;
+}
+
+.navigation ul li.nav-link {
+  padding-right: 0;
+}
+
+.navigation ul li.nav-link a {
+  padding: 0 1em;
+  font-weight: 800;
+  &.home {
+    color: #333;
+  }
+  &.rules {
+    color: $hilz-gold;
+    &:hover {
+      color: #fff;
+      background: $hilz-gold;
+    }
+    &.selected {
+      color: #fff;
+      background: $hilz-gold;
+    }
+  }
+  &.invites {
+    color: $hilz-blue;
+    &:hover {
+      color: #fff;
+      background: $hilz-blue;
+    }
+    &.selected {
+      color: #fff;
+      background: $hilz-blue;
+    }
+  }
+  &.join {
+    color: $hilz-red;
+    &:hover {
+      color: #fff;
+      background: $hilz-red;
+    }
+    &.selected {
+      color: #fff;
+      background: $hilz-red;
+    }
+  }
+  &.resources {
+    color: $hilz-green;
+    &:hover {
+      color: #fff;
+      background: $hilz-green;
+    }
+    &.selected {
+      color: #fff;
+      background: $hilz-green;
+    }
+  }
+}
+
+// Sections
+
+section {
+  margin: 6em auto;
+}
+
+#rules {
+  border-top: 10px solid $hilz-gold;
+}
+
+#invite {
+  border-top: 10px solid $hilz-blue;
+}
+
+#join {
+  border-top: 10px solid $hilz-red;
+}
+
+#resources {
+  border-top: 10px solid $hilz-green;
+}
+
+
+// Google form
+
+#crayhola-submit-page{
+  display:none
+}
+
+.ss-required-asterisk {
+    color: $hilz-red;
+}
+
+.ss-q-help.ss-secondary-text {
+    font-weight: normal;
+    color: #989898;
+}
+
+.ss-q-title {
+    margin: 25px 0px 0px 0px;
+}
+
+.error-message {
+    color: #989898;
+}

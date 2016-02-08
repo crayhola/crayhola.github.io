@@ -4,7 +4,7 @@ title: 'Welcome'
 .main-wrapper
     %section#home
 
-        %h1 Journalists of Color aka Crayhola
+        %h1 Crayhola logo here TK
 
         :markdown
             You’ve found us! We are a community of Journalists of Color aka JOCs, and this website is for you – the public – to peruse, find out what we’re all about and maybe even join us.
@@ -32,13 +32,18 @@ title: 'Welcome'
 
             “Work in journalism” = Do you identify as a journalist? Is your job something that helps to push journalism forward? Yeah? Sweet, then click on the following:
 
-            **APPLICATION/SURVEY GOOGLE FORM THINGY or shortcut to JOIN tab**
+            **shortcut to JOIN tab**
 
             Allies: While we appreciate your support, this space is for us.
 
+
+
+
+
+
     %section#rules
 
-        %h2 THE RULES
+        %h2 The Rules
 
         :markdown
             What happens in the JOCs Slack stays in the JOCs Slack – everything said or gif’d or bot’d is **OFF THE RECORD**. This is a safe space to talk about whatever, network, commune and support one another. Now, we’re all smart enough to know that nothing on the Interwebs is 100% safe or secure and we’re supposed to trust no one, so that’s where common sense comes in.
@@ -47,16 +52,116 @@ title: 'Welcome'
 
     %section#join
 
-        %h2 JOIN
+        %h2 Join
 
-        %a{"class" => "typeform-share button", "href" => "https://erik74.typeform.com/to/Utaa2L", "data-mode" => "2", "target" => "_blank"} Request Access
+        :markdown
+            Please submit your information in the form below. We will get in touch with you after reviewing your response.
 
-        :javascript
-            (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        #crayhola-submit-page
+            %p Thank you for submitting
 
-    %section#slack
+        %iframe{name: "hidden_iframe", id: "hidden_iframe", style: "display: none"}
 
-        %h2 TO THE SLACK!
+        %form#ss-form{:action => "https://docs.google.com/forms/d/1TjWsxYnSnjZfpJTb4wF6u2GssA-kEuxr7tZkEa2vW_o/formResponse", :method => "POST", :onsubmit => "", :target => "hidden_iframe"}
+            %ol.ss-question-list{:role => "list", :style => "padding-left: 0"}
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1745746778"}
+                                .ss-q-title
+                                    What's your name?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1745746778.ss-q-short{"aria-label" => "What's your name?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1745746778", :required => "", :title => "", :type => "text", :value => ""}
+                            #1767149014_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1359261857"}
+                                .ss-q-title
+                                    What do you do?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Describe your role in journalism. This can be a job title or prose.
+                            %input#entry_1359261857.ss-q-short{"aria-label" => "What do you do? Describe your role in journalism. This can be a job title or prose.  ", "aria-required" => "true", :dir => "auto", :name => "entry.1359261857", :required => "", :title => "", :type => "text", :value => ""}
+                            #921748078_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_175761975"}
+                                .ss-q-title
+                                    Where do you work?
+                                    .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_175761975.ss-q-short{"aria-label" => "Where do you work?  ", :dir => "auto", :name => "entry.175761975", :title => "", :type => "text", :value => ""}
+                            #974907990_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_134308582"}
+                                .ss-q-title
+                                    Tell us why you want to be part of this community
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_134308582.ss-q-long{"aria-label" => "Tell us why you want to be part of this community  Must be fewer than 500 characters.", "aria-required" => "true", :cols => "0", :dir => "auto", :name => "entry.134308582", :required => "", :rows => "8"}
+                            #332045042_errorMessage.error-message Must be fewer than 500 characters.
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1700131654"}
+                                .ss-q-title
+                                    What's your email address?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1700131654.ss-q-short{"aria-label" => "What's your email address?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1700131654", :required => "", :title => "", :type => "text", :value => ""}
+                            #11766413_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1885358451"}
+                                .ss-q-title
+                                    Show us your work
+                                    .ss-q-help.ss-secondary-text{:dir => "auto"} Send us links to the things you've worked on and/or to your portfolio.
+                                %textarea#entry_1885358451.ss-q-long{"aria-label" => "Show us your work Send us links to the things you've worked on and/or to your portfolio. Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1885358451", :rows => "8"}
+                                #1543555192_errorMessage.error-message Must be fewer than 500 characters.
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1275507573"}
+                                .ss-q-title
+                                    Your twitter account, please!
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1275507573.ss-q-short{"aria-label" => "Your twitter account, please!  ", :dir => "auto", :name => "entry.1275507573", :title => "", :type => "text", :value => ""}
+                            #1916756308_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1218940985"}
+                                .ss-q-title
+                                    Anything else you want to tell us?
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_1218940985.ss-q-long{"aria-label" => "Anything else you want to tell us?  Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1218940985", :rows => "8"}
+                            #291013561_errorMessage.error-message Must be fewer than 500 characters.
+
+                %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;901031710373245802&quot;]\n            "}
+                    %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+                        %input{:name => "fvv", :type => "hidden", :value => "0"}
+                            %input{:name => "fbzx", :type => "hidden", :value => "901031710373245802"}
+                                .ss-item.ss-navigate
+                                    %table#navigation-table
+                                        %tbody
+                                            %tr
+                                                %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+                                                    %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}
+                                    %p
+                                        %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                        %i These are required questions.
 
         :markdown
             Once you get the invite in your email, click to join right away.
