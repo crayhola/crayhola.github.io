@@ -59,165 +59,116 @@ title: 'Welcome'
 
         #crayhola-submit-page
             %p Thank you for submitting
-        -# :plain
-        -#     <div id="crayhola-submit-page"><p>Thank you for submitting</p></div>
+
         %iframe{name: "hidden_iframe", id: "hidden_iframe", style: "display: none"}
-        -# :plain
-        -#     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-        :plain
-            <form action="https://docs.google.com/forms/d/1TjWsxYnSnjZfpJTb4wF6u2GssA-kEuxr7tZkEa2vW_o/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="">
-                <ol role="list" class="ss-question-list" style="padding-left: 0">
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item ss-item-required ss-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1745746778">
-                                    <div class="ss-q-title">What&#39;s your name?
+        %form#ss-form{:action => "https://docs.google.com/forms/d/1TjWsxYnSnjZfpJTb4wF6u2GssA-kEuxr7tZkEa2vW_o/formResponse", :method => "POST", :onsubmit => "", :target => "hidden_iframe"}
+            %ol.ss-question-list{:role => "list", :style => "padding-left: 0"}
 
-                                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <input type="text" name="entry.1745746778" value="" class="ss-q-short" id="entry_1745746778" dir="auto" aria-label="What&#39;s your name?  " aria-required="true" required="" title="">
-                                <div class="error-message" id="1767149014_errorMessage"></div>
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1745746778"}
+                                .ss-q-title
+                                    What's your name?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1745746778.ss-q-short{"aria-label" => "What's your name?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1745746778", :required => "", :title => "", :type => "text", :value => ""}
+                            #1767149014_errorMessage.error-message
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item ss-item-required ss-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1359261857">
-                                    <div class="ss-q-title">What do you do?
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1359261857"}
+                                .ss-q-title
+                                    What do you do?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Describe your role in journalism. This can be a job title or prose.
+                            %input#entry_1359261857.ss-q-short{"aria-label" => "What do you do? Describe your role in journalism. This can be a job title or prose.  ", "aria-required" => "true", :dir => "auto", :name => "entry.1359261857", :required => "", :title => "", :type => "text", :value => ""}
+                            #921748078_errorMessage.error-message
 
-                                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto">Describe your role in journalism. This can be a job title or prose. </div>
-                                </label>
-                                <input type="text" name="entry.1359261857" value="" class="ss-q-short" id="entry_1359261857" dir="auto" aria-label="What do you do? Describe your role in journalism. This can be a job title or prose.  " aria-required="true" required="" title="">
-                                <div class="error-message" id="921748078_errorMessage"></div>
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_175761975"}
+                                .ss-q-title
+                                    Where do you work?
+                                    .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_175761975.ss-q-short{"aria-label" => "Where do you work?  ", :dir => "auto", :name => "entry.175761975", :title => "", :type => "text", :value => ""}
+                            #974907990_errorMessage.error-message
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item  ss-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_175761975">
-                                    <div class="ss-q-title">Where do you work?
-                                    </div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <input type="text" name="entry.175761975" value="" class="ss-q-short" id="entry_175761975" dir="auto" aria-label="Where do you work?  " title="">
-                                <div class="error-message" id="974907990_errorMessage"></div>
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_134308582"}
+                                .ss-q-title
+                                    Tell us why you want to be part of this community
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_134308582.ss-q-long{"aria-label" => "Tell us why you want to be part of this community  Must be fewer than 500 characters.", "aria-required" => "true", :cols => "0", :dir => "auto", :name => "entry.134308582", :required => "", :rows => "8"}
+                            #332045042_errorMessage.error-message Must be fewer than 500 characters.
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item ss-item-required ss-paragraph-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_134308582">
-                                    <div class="ss-q-title">Tell us why you want to be part of this community
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1700131654"}
+                                .ss-q-title
+                                    What's your email address?
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1700131654.ss-q-short{"aria-label" => "What's your email address?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1700131654", :required => "", :title => "", :type => "text", :value => ""}
+                            #11766413_errorMessage.error-message
 
-                                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <textarea name="entry.134308582" rows="8" cols="0" class="ss-q-long" id="entry_134308582" dir="auto" aria-label="Tell us why you want to be part of this community  Must be fewer than 500 characters." aria-required="true" required=""></textarea>
-                                <div class="error-message" id="332045042_errorMessage">Must be fewer than 500 characters.</div>
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1885358451"}
+                                .ss-q-title
+                                    Show us your work
+                                    .ss-q-help.ss-secondary-text{:dir => "auto"} Send us links to the things you've worked on and/or to your portfolio.
+                                %textarea#entry_1885358451.ss-q-long{"aria-label" => "Show us your work Send us links to the things you've worked on and/or to your portfolio. Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1885358451", :rows => "8"}
+                                #1543555192_errorMessage.error-message Must be fewer than 500 characters.
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item ss-item-required ss-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1700131654">
-                                    <div class="ss-q-title">What&#39;s your email address?
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1275507573"}
+                                .ss-q-title
+                                    Your twitter account, please!
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1275507573.ss-q-short{"aria-label" => "Your twitter account, please!  ", :dir => "auto", :name => "entry.1275507573", :title => "", :type => "text", :value => ""}
+                            #1916756308_errorMessage.error-message
 
-                                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <input type="text" name="entry.1700131654" value="" class="ss-q-short" id="entry_1700131654" dir="auto" aria-label="What&#39;s your email address?  " aria-required="true" required="" title="">
-                                <div class="error-message" id="11766413_errorMessage"></div>
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1218940985"}
+                                .ss-q-title
+                                    Anything else you want to tell us?
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_1218940985.ss-q-long{"aria-label" => "Anything else you want to tell us?  Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1218940985", :rows => "8"}
+                            #291013561_errorMessage.error-message Must be fewer than 500 characters.
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item  ss-paragraph-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1885358451">
-                                    <div class="ss-q-title">Show us your work
-                                    </div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto">Send us links to the things you&#39;ve worked on and/or to your portfolio.</div>
-                                </label>
-                                <textarea name="entry.1885358451" rows="8" cols="0" class="ss-q-long" id="entry_1885358451" dir="auto" aria-label="Show us your work Send us links to the things you&#39;ve worked on and/or to your portfolio. Must be fewer than 500 characters."></textarea>
-                                <div class="error-message" id="1543555192_errorMessage">Must be fewer than 500 characters.</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item  ss-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1275507573">
-                                    <div class="ss-q-title">Your twitter account, please!
-                                    </div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <input type="text" name="entry.1275507573" value="" class="ss-q-short" id="entry_1275507573" dir="auto" aria-label="Your twitter account, please!  " title="">
-                                <div class="error-message" id="1916756308_errorMessage"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss-form-question errorbox-good" role="listitem">
-                        <div dir="auto" class="ss-item  ss-paragraph-text">
-                            <div class="ss-form-entry">
-                                <label class="ss-q-item-label" for="entry_1218940985">
-                                    <div class="ss-q-title">Anything else you want to tell us?
-                                    </div>
-                                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                                </label>
-                                <textarea name="entry.1218940985" rows="8" cols="0" class="ss-q-long" id="entry_1218940985" dir="auto" aria-label="Anything else you want to tell us?  Must be fewer than 500 characters."></textarea>
-                                <div class="error-message" id="291013561_errorMessage">Must be fewer than 500 characters.</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" name="draftResponse" value="[,,&quot;901031710373245802&quot;]
-            ">
-                    <input type="hidden" name="pageHistory" value="0">
-
-                    <input type="hidden" name="fvv" value="0">
-
-                    <input type="hidden" name="fbzx" value="901031710373245802">
-
-                    <div class="ss-item ss-navigate">
-                        <table id="navigation-table">
-                            <tbody>
-                                <tr>
-                                    <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>
-                            <span class="ss-required-asterisk" aria-hidden="true">*</span>
-                            <i>These are required questions.</i>
-                        </p>
-                    </div>
-
-
-                </ol>
-            </form>
+                %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;901031710373245802&quot;]\n            "}
+                    %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+                        %input{:name => "fvv", :type => "hidden", :value => "0"}
+                            %input{:name => "fbzx", :type => "hidden", :value => "901031710373245802"}
+                                .ss-item.ss-navigate
+                                    %table#navigation-table
+                                        %tbody
+                                            %tr
+                                                %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+                                                    %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}
+                                    %p
+                                        %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                        %i These are required questions.
 
 
 
 
 
-        :javascript
-            (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+        -# :javascript
+        -#     (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
 
         :markdown
             Once you get the invite in your email, click to join right away.
