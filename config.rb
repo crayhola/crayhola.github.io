@@ -1,4 +1,5 @@
 require "extensions/views"
+require_relative "./lib/cleaner"
 
 activate :views
 activate :directory_indexes
@@ -22,6 +23,7 @@ end
 configure :build do
   # Relative assets needed to deploy to Github Pages
   activate :relative_assets
+  activate :build_cleaner
 end
 
 activate :deploy do |deploy|
