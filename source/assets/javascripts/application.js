@@ -41,7 +41,9 @@ $(document).ready(function () {
         var sectionScrollTopFix = $anchor.top - parseInt(bodyPadding);
 
         $('body').animate({
-            scrollTop: sectionScrollTopFix
+            scrollTop: sectionScrollTopFix,
+            duration: 500,
+            easing: 'easein'
         }, 500, 'swing', function () {
              $(document).on("scroll", onScroll);
         });

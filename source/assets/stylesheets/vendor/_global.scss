@@ -10,6 +10,17 @@ body {
     }
 }
 
+.logo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+
+    @include media($medium-screen) {
+        width: 400px;
+    }
+}
+
+
 section {
     margin-bottom: 50px;
 }
@@ -67,7 +78,6 @@ ul {
     }
 
     .navigation-mobile-menu {
-        color: $navigation-color;
         display: block;
         float: right;
         line-height: $navigation-height;
@@ -78,11 +88,6 @@ ul {
 
         @include media ($horizontal-bar-mode) {
             display: none;
-        }
-
-        &:focus,
-        &:hover {
-            color: $navigation-color-hover;
         }
     }
 
