@@ -49,6 +49,14 @@ a {
   font-weight: 800;
   &.home {
     color: #333;
+    &:hover {
+      color: #fff;
+      background: #333;
+    }
+    &.selected {
+      color: #fff;
+      background: #333;
+    }
   }
   &.rules {
     color: $hilz-gold;
@@ -99,7 +107,8 @@ a {
 // Sections
 
 section {
-  margin: 6em auto;
+    margin-top: 4em;
+    padding: 1em 0 4em 0;
 }
 
 #rules {

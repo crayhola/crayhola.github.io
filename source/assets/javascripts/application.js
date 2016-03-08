@@ -38,7 +38,7 @@ $(document).ready(function () {
         $(this).addClass('selected');
 
         var bodyPadding = $('section').css('margin-top');
-        var sectionScrollTopFix = $anchor.top - parseInt(bodyPadding);
+        var sectionScrollTopFix = ($anchor.top - 75) - parseInt(bodyPadding);
 
         $('body').animate({
             scrollTop: sectionScrollTopFix,
@@ -57,6 +57,4 @@ $(document).ready(function () {
         $('#crayhola-submit-page').show();
         console.log("you submitted!")
     });
-
-
 });
