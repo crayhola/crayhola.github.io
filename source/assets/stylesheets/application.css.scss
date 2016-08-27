@@ -144,6 +144,15 @@ section {
 
 .ss-q-title {
     margin: 25px 0px 0px 0px;
+
+    label {
+        display: inline;
+    }
+}
+
+.ss-choices {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .error-message {
@@ -156,4 +165,11 @@ section {
 
 #home {
     margin: 0 auto;
+}
+
+#resources {
+
+    h3 {
+        margin: 1em 0 .5em 0;
+    }
 }
