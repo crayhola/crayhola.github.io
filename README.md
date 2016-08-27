@@ -2,7 +2,7 @@
 
 Set up your project in your code directory
 ```
-git clone https://github.com/crayhola/crayhola.github.io.git
+git clone https://github.com/crayhola/crayhola.github.io.git crayhola
 cd crayhola
 ```
 
