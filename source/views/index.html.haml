@@ -1,0 +1,252 @@
+---
+title: 'Welcome'
+---
+-# TESTING COMMENTS
+.main-wrapper
+    %section#home
+        .logo
+            = image_tag 'logo-desktop.svg', :class => 'img-responsive'
+
+        :markdown
+            You’ve found us! We are a community of Journalists of Color aka JOCs, and this website is for you – the public – to peruse, find out what we’re all about and maybe even join us.
+
+            We created a Slack team to start gathering people and ideas, and we quickly learned a few things:
+
+            + The media diversity struggle is _real_ real in newsrooms across the country.
+
+            + The conversations we’re having are ones that need to be had on a wider scale.
+
+            + Members agree that a community like this is wanted and necessary.
+
+            We founded this group to put Journalists of Color in the same "room" (you know, so you’re not the [only one](http://www.npr.org/sections/codeswitch/2015/07/29/427190143/on-wyatt-cenac-key-peele-and-being-the-only-one-in-the-room 'Key and Peele skit').) And having a Slack team allows us to branch out and create infinite rooms to discuss a variety of topics, collaborate on projects or chat/scheme/vent privately via direct messages or private groups.
+
+            We are dedicated to growing and expanding this community, and its conversations and opportunities. We’ve already branched out from Slack to a couple of meetups on the East and West coasts. So stay tuned because we’re just getting started.
+
+    %section#invite
+
+        %h2 WHO’S INVITED
+
+        :markdown
+            You are or identify as a person of color and work in journalism.
+
+            “Work in journalism” = Do you identify as a journalist? Is your job something that helps to push journalism forward? Yeah? Sweet!
+
+            <a class="pure-button pure-button-join" id="join-joc" href="#join">Join JOCs now!</a>
+
+            Allies: While we appreciate your support, this space is for us. Check out [our resources tab](#resources 'Resources') for more ways to encourage diversity.
+
+    %section#rules
+
+        %h2 The Rules
+
+        :markdown
+            What happens in the JOCs Slack stays in the JOCs Slack – everything said or gif’d or bot’d is **OFF THE RECORD**. This is a safe space to talk about whatever, network, commune and support one another. Now, we’re all smart enough to know that nothing on the Interwebs is 100% safe or secure and we’re supposed to trust no one, so that’s where common sense comes in.
+
+            In earlier discussions we agreed that the same decorum and discretion we apply to social media or professional listservs should be used in the all-access, public channels. Be respectful, don’t be a jerk, and help keep this space as accessible and inclusive as possible.
+
+    %section#join
+
+        %h2 Join
+
+        :markdown
+            Please submit your information in the form below. We will get in touch with you after reviewing your response.
+
+        #crayhola-submit-page
+            %p Thank you for submitting
+
+        %iframe{name: "hidden_iframe", id: "hidden_iframe", style: "display: none"}
+
+        %form#ss-form{:action => "https://docs.google.com/a/erikreyna.com/forms/d/e/1FAIpQLScX-r7zaSxgBLe-spA0kl5YA7AS1J0BcLKh9cBegwYxglTwAA/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
+            %ol.ss-question-list{:role => "list", :style => "padding-left: 0;"}
+                %span.bold.ss-required-asterisk{"aria-hidden" => "true"} * required
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1745746778"}
+                                .ss-q-title
+                                    What's your name?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1745746778.ss-q-short{"aria-label" => "What's your name?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1745746778", :required => "", :title => "", :type => "text", :value => ""}/
+                            #1767149014_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-radio{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_144804730"}
+                                .ss-q-title
+                                    Do you identify as a Person of Color?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %ul.ss-choices{"aria-label" => "Do you identify as a Person of Color?  ", :role => "radiogroup"}
+                                %li.ss-choice-item
+                                    %label
+                                        %span.ss-choice-item-control.goog-inline-block
+                                            %input#group_1672832487_1.ss-q-radio{"aria-label" => "Yes", "aria-required" => "true", :name => "entry.1672832487", :required => "", :role => "radio", :type => "radio", :value => "Yes"}/
+                                        %span.ss-choice-label Yes
+                                %li.ss-choice-item
+                                    %label
+                                        %span.ss-choice-item-control.goog-inline-block
+                                            %input#group_1672832487_2.ss-q-radio{"aria-label" => "No", "aria-required" => "true", :name => "entry.1672832487", :required => "", :role => "radio", :type => "radio", :value => "No"}/
+                                        %span.ss-choice-label No
+                            #144804730_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-radio{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_154746427"}
+                                .ss-q-title
+                                    Are you a Journalist?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Or are otherwise helping to advance news media and consumption?
+                            %ul.ss-choices{"aria-label" => "Are you a Journalist?  Or are otherwise helping to advance news media and consumption? ", :role => "radiogroup"}
+                                %li.ss-choice-item
+                                    %label
+                                        %span.ss-choice-item-control.goog-inline-block
+                                            %input#group_695202526_1.ss-q-radio{"aria-label" => "Yes", "aria-required" => "true", :name => "entry.695202526", :required => "", :role => "radio", :type => "radio", :value => "Yes"}/
+                                        %span.ss-choice-label Yes
+                                %li.ss-choice-item
+                                    %label
+                                        %span.ss-choice-item-control.goog-inline-block
+                                            %input#group_695202526_2.ss-q-radio{"aria-label" => "No", "aria-required" => "true", :name => "entry.695202526", :required => "", :role => "radio", :type => "radio", :value => "No"}/
+                                        %span.ss-choice-label No
+                            #154746427_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1359261857"}
+                                .ss-q-title
+                                    What do you do?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Describe your role. This can be a job title or prose.
+                            %input#entry_1359261857.ss-q-short{"aria-label" => "What do you do? Describe your role. This can be a job title or prose.  ", "aria-required" => "true", :dir => "auto", :name => "entry.1359261857", :required => "", :title => "", :type => "text", :value => ""}/
+                            #921748078_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_175761975"}
+                                .ss-q-title
+                                    Where do you work?
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_175761975.ss-q-short{"aria-label" => "Where do you work?  ", :dir => "auto", :name => "entry.175761975", :title => "", :type => "text", :value => ""}/
+                            #974907990_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1885358451"}
+                                .ss-q-title
+                                    Show us your work
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Send us links to the things you've worked on and/or to your portfolio.
+                            %textarea#entry_1885358451.ss-q-long{"aria-label" => "Show us your work Send us links to the things you've worked on and/or to your portfolio. Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1885358451", :rows => "8"}
+                            #1543555192_errorMessage.error-message Must be fewer than 500 characters.
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_134308582"}
+                                .ss-q-title
+                                    Tell us why you want to be part of this community
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_134308582.ss-q-long{"aria-label" => "Tell us why you want to be part of this community  Must be fewer than 500 characters.", "aria-required" => "true", :cols => "0", :dir => "auto", :name => "entry.134308582", :required => "", :rows => "8"}
+                            #332045042_errorMessage.error-message Must be fewer than 500 characters.
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1956857181"}
+                                .ss-q-title
+                                    What would you like to see a community like this do?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_1956857181.ss-q-long{"aria-label" => "What would you like to see a community like this do?  Must be fewer than 500 characters.", "aria-required" => "true", :cols => "0", :dir => "auto", :name => "entry.1956857181", :required => "", :rows => "8"}
+                            #914938276_errorMessage.error-message Must be fewer than 500 characters.
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-item-required.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1700131654"}
+                                .ss-q-title
+                                    What's your email address?
+                                    %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                                    %span.ss-required-asterisk{"aria-hidden" => "true"} *
+                                .ss-q-help.ss-secondary-text{:dir => "auto"} Use your personal email because job changes happen!
+                            %input#entry_1700131654.ss-q-short{"aria-label" => "What's your email address?  ", "aria-required" => "true", :dir => "auto", :name => "entry.1700131654", :required => "", :title => "", :type => "text", :value => ""}/
+                            #11766413_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1275507573"}
+                                .ss-q-title
+                                    Your twitter account, please!
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %input#entry_1275507573.ss-q-short{"aria-label" => "Your twitter account, please!  ", :dir => "auto", :name => "entry.1275507573", :title => "", :type => "text", :value => ""}/
+                            #1916756308_errorMessage.error-message
+
+                .ss-form-question.errorbox-good{:role => "listitem"}
+                    .ss-item.ss-paragraph-text{:dir => "auto"}
+                        .ss-form-entry
+                            %label.ss-q-item-label{:for => "entry_1218940985"}
+                                .ss-q-title
+                                    Anything else you want to tell us?
+                                .ss-q-help.ss-secondary-text{:dir => "auto"}
+                            %textarea#entry_1218940985.ss-q-long{"aria-label" => "Anything else you want to tell us?  Must be fewer than 500 characters.", :cols => "0", :dir => "auto", :name => "entry.1218940985", :rows => "8"}
+                            #291013561_errorMessage.error-message Must be fewer than 500 characters.
+
+                %input{:name => "draftResponse", :type => "hidden", :value => "[,,\"-3527257659829654258\"]\r\n"}/
+                %input{:name => "pageHistory", :type => "hidden", :value => "0"}/
+                %input{:name => "fbzx", :type => "hidden", :value => "-3527257659829654258"}/
+                .ss-item.ss-navigate
+                    %table#navigation-table
+                        %tbody
+                            %tr
+                                %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+                                    %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}/
+
+        :markdown
+            Once you get the invite in your email, click to join right away.
+
+            First steps:
+
+            1. You’ll be asked to fill in your username – this can be whatever you want.
+
+            2. Pick a strong password [we recommend enabling two-factor authentication](https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication 'Instructions to enable two-factor authentication')).
+
+            3. You’re in! Now you can finish the rest of your profile: Select “View Profile & Account” in the dropdown to the right of “JOC” and click the edit button. We encourage you to use your full name, title and a picture of yourself – it'll help people who don't already know you *get* to know you.
+
+            4. By default, you’ll be opted into the #general and #intros channels. Go ahead and tell us a little bit about yourself in the #intros channel!
+
+    %section#resources
+
+        %h2 Resources
+
+        :markdown
+            + [Our Twitter list](https://twitter.com/juliachanb/lists/jocs 'Journalists of Color Twitter List')
+
+            ### Some Style Guides
+            + [The Diversity Style Guide](http://www.diversitystyleguide.com/ 'The Diversity Style Guide')
+            + [AAJA Guide to Covering Asian America](http://www.aaja.org/coverageguide/ 'AAJA Guide to Covering Asian America')
+            + [NABJ Style Guide](http://www.nabj.org/?styleguide 'NABJ Style Guide')
+            + [NLGJA Stylebook](http://www.nlgja.org/stylebook/ 'NLGJA Stylebook')
+            + [GLAAD Media Reference Guide](http://www.glaad.org/reference 'GLAAD Media Reference Guide')
+
+            ### More JOC Organizations
+            + [Asian American Journalists Association](http://www.aaja.org/ 'Asian American Journalists Association')
+            + [National Association of Hispanic Journalists](http://www.nahj.org/ 'National Association of Hispanic Journalists')
+            + [National Association of Black Journalists](http://www.nabj.org/ 'National Association of Black Journalists')
+            + [The Association of LGBTQ Journalists](http://www.nlgja.org/ 'The Association of LGBTQ Journalists')
+            + [South Asian Journalists Association](http://www.saja.org/ 'South Asian Journalists Association')
+
+            ### Other dope JOC projects
+            + [Writers of Color](http://www.writersofcolor.org/ 'Writers of Color')
+            + [Journalism Diversity Project](http://diversify.journalismwith.me/ 'Journalism Diversity Project')
